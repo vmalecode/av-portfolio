@@ -1,13 +1,209 @@
-body {
+/* Global Properties */
+:root {
+  --main-bg-color: brown;
+  --primary: rgb(80, 0, 0);
+  font-family: Garamond, serif;
+  --text-color: rgba(255, 255, 255, 0.9);
+  color:var(--text-color);
+  background-color: rgba(0, 0, 0, 0.9);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+/* Navbar */
+.navbarWrapper{
+  background-color: var(--primary);
+    width: 80%;
+    top: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,minmax(0,auto));
+    z-index: 1;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbarTitle{
+  text-align: center;
+  font-variant: small-caps;
+    font-size: 45px;
+}
+.navbar > ul{
+  display: flex;
+  list-style: none;
+  margin-top:0px;
+  margin-bottom: 10px;
+}
+.navbar ul li{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.navbar > ul > li > a{
+  text-decoration: none;
+  transition: all .1s ease;
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 23px;
+  margin-left:20px;
+  margin-right: 20px;
+}
+.navbar > ul > li >a:hover{
+  text-decoration: underline;
+}
+.NameContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.Name{
+  font-variant: small-caps;
+  font-size: 75px;
+}
+.mainWrapper{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6,minmax(00px,auto));
+  gap: 010px;
+  border-color: var(--b-compliment);
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 20%;
+}
+.projectsWrapper{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3,minmax(300px,auto));
+  gap: 50px;
+  border-color: var(--b-compliment);
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+}
+.Subheader1{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows:min-content;
+  font-variant: small-caps;
+  font-size: 45px;
+}
+.Subheader1Label{
+  grid-column: 1/-1;
+  border-bottom: solid;
+  border-bottom-color: var(--primary);
+  font-weight: 550;
+}
+.Subheader2Label{
+  grid-template-columns: 1/-1;
+  height: 30px;
+  font-variant:normal;
+  font-size: 20px;
+  font-weight: 900;
+  height: fit-content;
+}
+.Subheader2Right{
+  height: 30px;
+  text-align: end;
+  font-variant:normal;
+  font-size: 20px;
+}
+.Subheader3Content{
+  font-variant: normal;
+  font-size: 20px;
+  grid-column: 1/-1;
+  display: flex;
+}
+.Subheader3Content ul{
+  width: 100%;
+  margin: 0;
+  text-decoration: none;
+}
+.Subheader3Content ul li{
+  margin-left:25px;
+}
+.Subheader3Content ul li a{
+  color: var(--text-color);
+}
+.Subheader3Content ul img{
+  width:300px;
+}
+#chess{
+  padding-left: 25px;
+  width:600px;
+  margin: 0 auto;
+}
+.imgWrap{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+/*
+ Chess img needs to be reduced
+*/
+@media only screen and (max-width: 1300px) {
+  #chess {
+    width:500px;
+  }
+  .mainWrapper {
+    margin-left: 0;
+    margin-right:0;
+  }
+  .navbarWrapper {
+    width: 90%;
+    
+  }
+  .projectsWrapper{
+    width:90%;
+    margin: 0 auto;
+  } 
+}
+/* For smaller screens, make more room by:
+          - Eliminating margin
+          - Reducing padding
+          - Reduce name font size */
+@media only screen and (max-width: 1000px) {
+  .navbarWrapper {
+    width: 100%;
+    
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  .projectsWrapper{
+    width: 97%;
+    margin:0 auto;
+    padding:0;
+  }
+  .navbar ul{
+      margin:0;
+      padding:0;
+  }
+  .navbar ul li a{
+      flex-wrap:wrap;
+      list-style: none;
+      font-size: 20px;
+      padding:15px;
+  }
+  .Name{
+      font-size: 50px;
+  }
+  .mainWrapper{
+      margin-left: 0;
+      margin-right:0;
+  }
+  .projectsWrapper{
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3,minmax(0,auto));
+  }
+  .navbarTitle {
+    font-size: 35px;
+  }
 }
