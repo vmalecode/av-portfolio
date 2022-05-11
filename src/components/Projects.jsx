@@ -65,6 +65,7 @@ const Projects = () => {
           <div className="Subheader1">
             <div className="Subheader1Label">Anagrams</div>
             <div className="Subheader2Label">Northeastern University</div>
+            <div className="Subheader2Right">August, 2021</div>
             <div className="Subheader3Content">
               <ul>
                 <li>C program that finds all English anagrams</li>
