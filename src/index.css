@@ -12,8 +12,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  
 }
 /* Navbar */
 .navbarWrapper{
@@ -79,6 +77,16 @@
   margin-right: 15%;
   margin-bottom: 20%;
 }
+.experience{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6,minmax(00px,auto));
+  gap: 010px;
+  border-color: var(--b-compliment);
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 2%;
+}
 .projectsWrapper{
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -99,9 +107,11 @@
 }
 .Subheader1Label{
   grid-column: 1/-1;
+  height:fit-content;
   border-bottom: solid;
   border-bottom-color: var(--primary);
   font-weight: 550;
+  margin-bottom: 15px;
 }
 .Subheader2Label{
   grid-template-columns: 1/-1;
@@ -112,16 +122,26 @@
   height: fit-content;
 }
 .Subheader2Right{
-  height: 30px;
+  height: fit-content;
   text-align: end;
   font-variant:normal;
   font-size: 20px;
+}
+.Subheader3Label{
+  font-variant: normal;
+  font-size: 20px;
+}
+.Subheader3Date{
+  font-variant: normal;
+  font-size: 20px;
+  text-align: end;
 }
 .Subheader3Content{
   font-variant: normal;
   font-size: 20px;
   grid-column: 1/-1;
   display: flex;
+  margin-bottom: 15px;
 }
 .Subheader3Content ul{
   width: 100%;
@@ -137,9 +157,9 @@
 .Subheader3Content ul img{
   width:300px;
 }
-#chess{
+#gif{
   padding-left: 25px;
-  width:600px;
+  width:500px;
   margin: 0 auto;
 }
 .imgWrap{
@@ -148,10 +168,14 @@
   justify-content: center;
 }
 /*
- Chess img needs to be reduced
+ gif img needs to be reduced
 */
 @media only screen and (max-width: 1300px) {
-  #chess {
+  .experience{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #gif {
     width:500px;
   }
   .mainWrapper {
@@ -160,7 +184,6 @@
   }
   .navbarWrapper {
     width: 90%;
-    
   }
   .projectsWrapper{
     width:90%;
@@ -174,9 +197,11 @@
 @media only screen and (max-width: 1000px) {
   .navbarWrapper {
     width: 100%;
-    
   }
-
+  .experience{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
   .projectsWrapper{
     width: 97%;
     margin:0 auto;
@@ -206,4 +231,12 @@
   .navbarTitle {
     font-size: 35px;
   }
+}
+@media only screen and (max-width: 500px) {
+  #gif {
+    width:375px;
+    margin: 0;
+    padding:0;
+  }
+
 }
