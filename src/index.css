@@ -154,14 +154,18 @@
 .Subheader3Content ul li a{
   color: var(--text-color);
 }
-.Subheader3Content ul img{
+
+.img{
+  padding-left: 25px;
   width:300px;
+  margin: 0 auto;
 }
-#gif{
+.imgLarge{
   padding-left: 25px;
   width:500px;
   margin: 0 auto;
 }
+
 .imgWrap{
   margin-top: 25px;
   display: flex;
@@ -175,8 +179,8 @@
     margin-left: 10%;
     margin-right: 10%;
   }
-  #gif {
-    width:500px;
+  .img {
+    width:300px;
   }
   .mainWrapper {
     margin-left: 0;
@@ -233,8 +237,7 @@
   }
 }
 @media only screen and (max-width: 500px) {
-  #gif {
-    width:375px;
+  .img {
     margin: 0;
     padding:0;
   }
