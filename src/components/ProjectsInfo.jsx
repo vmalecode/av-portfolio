@@ -23,7 +23,7 @@ export const wordle = {
   date: 'March, 2022',
   affiliation: 'Northeastern University',
   bulletPoints: ['A clone of Wordle using React and Redux',
-                'Responsive, mobile friendly website made from React and custom CSS',
+                'Used custom CSS to create mobile friendly UI',
                 'Protected routes to updated, delete reviews',
                 'Front end runs on React & Redux'],
   demoLink: 'https://av-wordle.herokuapp.com/',
