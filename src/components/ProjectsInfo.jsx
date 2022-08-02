@@ -9,7 +9,7 @@ export const movieReview = {
   affiliation: 'Northeastern University',
   bulletPoints: ['Fullstack project using MERN stack (Mongo, Express, React, Node)',
     'Utilizes OAuth bearer tokens for user sign in',
-    'Protected routes to updated, delete reviews',
+    'Protected routes to update, delete reviews',
     'Encrypted and salted passwords',
     'Front end runs on React & Redux',
     'Source availabile on request'],
