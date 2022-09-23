@@ -2,22 +2,25 @@
 const express = require('express')
 const path = require("path");
 const app = express()
+const dotenv = require("dotenv");
 
 // #############################################################################
 // This configures static hosting for files in /public that have the extensions
 // listed in the array.
-var options = {
-  dotfiles: 'ignore',
-  etag: false,
-  extensions: ['htm', 'html','css','js','ico','jpg','jpeg','png','svg'],
-  index: ['index.html'],
-  maxAge: '1m',
-  redirect: false
+const PORT = process.env.PORT || 8000;
+dotenv.config();
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
+// serve the frontend
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, './build')))
+
+  app.get('*', (req, res) =>
+    res.sendFile(
+      path.resolve(__dirname, 'build', 'index.html')
+    )
+  )
+} else {
+  app.get('/', (req, res) => res.send('set environment to production' ))
 }
-app.use(express.static('build', options))
-
-const port = process.env.PORT || 3000
-
-app.listen(port, () => {
-  console.log(`React app listening at http://localhost:${port}`)
-})
+module.exports = app;
