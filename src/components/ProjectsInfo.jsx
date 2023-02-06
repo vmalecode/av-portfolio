@@ -25,7 +25,7 @@ export const wordle = {
   bulletPoints: ['A clone of Wordle using React and Redux',
     'Used custom CSS to create mobile friendly UI'
   ],
-  demoLink: 'https://av-wordle.herokuapp.com/',
+  demoLink: 'https://av-wordle.cyclic.app',
   sourceLink: 'https://github.com/vmalecode/aaron-vandermale-project2-wordle',
   img: wordleImg,
 }
