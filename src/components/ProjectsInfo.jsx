@@ -14,7 +14,7 @@ export const movieReview = {
     'Front end runs on React & Redux',
     'Source availabile on request'],
   sourceLink: '',
-  demoLink: 'https://avmoviereview.herokuapp.com/',
+  demoLink: '',
   img: movieReviewImg,
   imgStyle: 'imgLarge',
 }
@@ -23,9 +23,11 @@ export const wordle = {
   date: 'March, 2022',
   affiliation: 'Northeastern University',
   bulletPoints: ['A clone of Wordle using React and Redux',
-    'Used custom CSS to create mobile friendly UI'
+    'Used custom CSS to create mobile friendly UI',
+    'Deployed on GCP Cloud Run',
+    'Containerized using Docker'
   ],
-  demoLink: 'https://av-wordle.cyclic.app',
+  demoLink: 'https://wordle-clone-ibir6636ua-uc.a.run.app/instructions',
   sourceLink: 'https://github.com/vmalecode/aaron-vandermale-project2-wordle',
   img: wordleImg,
 }
