@@ -1,5 +1,5 @@
 import Project from './Project'
-import {projectsList} from './ProjectsInfo'
+import { projectsList } from './ProjectsInfo'
 const Projects = () => {
   return (
     <>
@@ -9,7 +9,7 @@ const Projects = () => {
         </div>
         <div className="projectsWrapper">
           {projectsList.map((a) => {
-          return <Project project ={a}/>
+            return <Project project={a} />
           })}
         </div>
       </div>
