@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.3139c74a.css",
-    "main.js": "/static/js/main.e349b297.js",
+    "main.js": "/static/js/main.82b7b8eb.js",
     "static/media/movieReview.gif": "/static/media/movieReview.b08c9d66c08896ac0eb3.gif",
     "static/media/chess.gif": "/static/media/chess.a005beefb9abe3e41a77.gif",
     "static/media/wordle.gif": "/static/media/wordle.d602720a018cc9958321.gif",
     "static/media/anagrams.png": "/static/media/anagrams.c1793e92219acb8a5e1a.png",
     "index.html": "/index.html",
     "main.3139c74a.css.map": "/static/css/main.3139c74a.css.map",
-    "main.e349b297.js.map": "/static/js/main.e349b297.js.map"
+    "main.82b7b8eb.js.map": "/static/js/main.82b7b8eb.js.map"
   },
   "entrypoints": [
     "static/css/main.3139c74a.css",
-    "static/js/main.e349b297.js"
+    "static/js/main.82b7b8eb.js"
   ]
 }

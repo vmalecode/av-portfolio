@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="navbarTitle">Aaron Van Der Male</div>
         <nav className="navbar">
           <ul>
-            <li><a href='https://github.com/vmalecode' target='_blank' rel='noopener noreferrer'>Github</a></li>
+            <li><a href='https://github.com/vmalecode' target='_blank' rel='noopener noreferrer'>GitHub</a></li>
             <li><Link to='/projects'>Demo Projects</Link ></li>
           </ul>
         </nav>
